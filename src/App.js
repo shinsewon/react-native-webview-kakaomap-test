@@ -1,5 +1,6 @@
-import "./App.css";
-import KakaoMap from "./components/KakaoMap";
+import React from 'react';
+import './App.css';
+import KakaoMap from './components/KakaoMap';
 
 function App() {
   return (
