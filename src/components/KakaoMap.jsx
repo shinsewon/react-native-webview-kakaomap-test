@@ -14,7 +14,15 @@ function KakaoMap() {
     const map = new kakao.maps.Map /* eslint-disable-line no-unused-vars */(
       container,
       options,
-    );
+    ); /* eslint-disable-line no-unused-vars */
+  }, []);
+
+  useEffect(() => {
+    // RN에서 웹으로 데이터를 전송했을때 message이벤트가 실행됩니다.
+    document.addEventListener('message', (e) => {
+      // alert(e.data);
+      console.log('e>>', e);
+    });
   }, []);
 
   return (
